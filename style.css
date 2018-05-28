@@ -1,7 +1,19 @@
 #banner{
 	text-align: center;
-	background-image: url('image principale.jpg');
+	background-image: url('image.jpg');
+    background-repeat: no-repeat;
+    background-size: 1500px 700px;
 	padding: 200px;
+}
+
+#title {
+    font-family: 'Lobster', cursive;
+    font-size : 90px;
+}
+
+#subtitle {
+    font-family:'Dosis', sans-serif;
+    font-size : 20px;
 }
 
 #fond {
@@ -9,32 +21,69 @@
 }
 
 #footer {
-    color : #eaeaea;
-    background-color: rgb(5,5,5);
+    color : #FFFFFF;
+    background-color: #9E9E9E;
     padding: 50px;
     font-size: 15px;
     font-family: apple-system;
 }
 
 .social-link {
-    color: #eaeaea;
+    color: #FFFFFF;
 }
 
 .social-link:hover {
-    color : red;
-}
-
-#Actu {
-	color : #FF7F5B;
+    color : #FF7F5B;
 }
 
 .x {
 border : 2px solid #FF7F5B;
 border-radius : 10px;
-padding : 4px;
+padding : 5px;
 margin : 1px;
 text-align : center;
 }
 
+.x:hover{
+    color : #FFFFFF;
+    background-color: #FF7F5B;
+}
 
+#bus {
+    width: 500px;
+    height: 300px;
+}
+
+#conducteur {
+    width: 500px;
+    height: 300px;
+}
+
+#button {
+    background-color: #FF7F5B;
+    border: 0px;
+    border-radius : 10px;
+}
+
+#button:hover{
+    color :#FF7F5B;
+    background-color : #FFFFFF;
+}
+
+.texte {
+    font-family:'Dosis', sans-serif;
+}
+
+.h2 {
+    font-size : 20px;
+}
+
+.photos {
+    width : 50px;
+    border-radius: 50%;
+}
+
+.p {
+    padding-top : 10px;
+}
 
