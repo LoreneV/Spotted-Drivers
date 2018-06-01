@@ -1,0 +1,43 @@
+#banner {
+	background-image : url('banner1.png');
+	background-image :linear-gradient (rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+	background-size: 1500px 700px;
+	padding : 180px;
+	text-align : center;
+}
+
+#titre : {
+	font-family : 'Dosis', sans-serif;
+	font-size : 50px;
+}
+
+#footer {
+    color : #FFFFFF;
+    background-color: #606060;
+    padding: 50px;
+    font-size: 15px;
+    font-family: apple-system;
+}
+
+.social-link {
+    color: #FFFFFF;
+}
+
+.social-link:hover {
+    color : #FF7F5B;
+}
+.form-group {
+text-align: center;
+}
+
+.btn {
+	color:#FFFFFF;
+	background-color: #FF7F5B;
+    border: 0px;
+    border-radius : 10px;
+}
+
+.btn:hover {
+	color :#FF7F5B;
+    background-color : #FFFFFF;
+}

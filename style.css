@@ -22,7 +22,7 @@
 
 #footer {
     color : #FFFFFF;
-    background-color: #9E9E9E;
+    background-color: #606060;
     padding: 50px;
     font-size: 15px;
     font-family: apple-system;
@@ -60,6 +60,7 @@ text-align : center;
 }
 
 #button {
+    color : #FFFFFF;
     background-color: #FF7F5B;
     border: 0px;
     border-radius : 10px;

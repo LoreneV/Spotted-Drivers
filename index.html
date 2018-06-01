@@ -6,7 +6,6 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Carter+One|Jockey+One|Lobster" rel="stylesheet">
-
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
@@ -18,17 +17,16 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							Trajets
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Chercher un trajet</a>
-							<a class="dropdown-item" href="#">Proposer un trajet</a>
+							<a class="dropdown-item" href="Cherchertrajet.html">Chercher un trajet</a>
+							<a class="dropdown-item" href="Proposertrajet.html">Proposer un trajet</a>
 							<div class="dropdown-divider"></div>
-
 						</div>
 					</li>
 					<li class="nav-item">
@@ -40,7 +38,7 @@
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
 					<input class="form-control mr-sm-2" type="rechercher" placeholder="Rechercher" aria-label="Rechercher">
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit" id='button'>Rechercher</button>
 				</form>
 			</div>
 		</nav>
@@ -60,7 +58,7 @@
 					<h2 class='texte h2'><strong>Vous travaillez sur Marignane ?</strong></h2>
 					<h2 class='texte h2'><strong>Vous n'avez pas de voiture ?</strong></h2>
 					<p class='texte'>Ne perdez plus de temps dans les transports en commun : grâce à <strong>Spotted Drivers</strong>, voyagez en tout confort et en toute sérénité...</p>
-					<button type="button" class="btn btn-info" id='button' class='texte'>Je cherche mon trajet</button>
+					<a class="btn btn-primary" href="Cherchertrajet.html" role="button" id='button' class='texte'>Je cherche mon trajet</a>
 				</div>
 				<div class='col-lg-4 hidden-md-down'>
 					<img src='bus.jpg' id='bus'>
@@ -89,7 +87,7 @@
 		<div>
 			<br></br>
 		</div>
-		<div class='col-12 col-sm-6 col-lg-4 row justify-content-around'>
+		<div class='col-12 col-sm-6 col-lg-7 row justify-content-around'>
 			<h2 class='texte h2'> <strong>Nouveaux trajets proposés</strong> </h2>
 		</div>
 		<div>
@@ -100,8 +98,7 @@
 				<div class='row'>
 					<div class='col-12 col-lg-6 offset-lg-1'>
 						<div class='row mx-auto'>
-
-							<div class='col-12 col-sm-6 col-lg-5 x'>
+							<div class='col-12 col-sm-6 col-lg-5 x' data-toggle='modal' data-target='#exampleModalCenter'>
 								<div class='container'>
 									<div class="row justify-content-around">
 										<div class="col-4">
@@ -114,8 +111,7 @@
 								</div>
 								<p class='texte p'><strong> Castellane-Marignane </strong> </p>
 							</div>
-
-							<div class='col-12 col-sm-6 col-lg-5 x'>
+							<div class='col-12 col-sm-6 col-lg-5 x' data-toggle='modal' data-target='#exampleModalCenter2'>
 								<div class='container'>
 									<div class="row justify-content-start">
 										<div class="col-4">
@@ -126,93 +122,181 @@
 										</div>
 									</div>
 								</div>
-							<p class='texte p'><strong> Mazargue - Marignane </strong> </p>
-						</div>
-
-
-
-						<div class='col-12 col-sm-6 col-lg-5 x'>
-							<div class='container'>
-								<div class='row justify-content-start'>
-									<div class='col-4'>
-							<img src='Ruben.png' class='photos'>
-						</div>
-						<div class='col-4'>
-							<h2 class='texte h2'><strong>Ruben</strong></h2>
+								<p class='texte p'><strong> Cassis - Marignane </strong> </p>
+							</div>
+							<div class='col-12 col-sm-6 col-lg-5 x' data-toggle='modal' data-target='#exampleModalCenter3'>
+								<div class='container'>
+									<div class='row justify-content-start'>
+										<div class='col-4'>
+											<img src='Ruben.png' class='photos'>
+										</div>
+										<div class='col-4'>
+											<h2 class='texte h2'><strong>Ruben</strong></h2>
+										</div>
+									</div>
+								</div>
+								<p class='texte p'><strong> La Joliette - Marignane </strong> </p>
+							</div>
+							<div class='col-12 col-sm-6 col-lg-5 x' data-toggle='modal' data-target='#exampleModalCenter4'>
+								<div class='container'>
+									<div class='row justify-content-start'>
+										<div class='col-4'>
+											<img src='Lorene.png' class='photos'>
+										</div>
+										<div class='col-4'>
+											<h2 class='texte h2'><strong>Lorene</strong></h2>
+										</div>
+									</div>
+								</div>
+								<p class='texte p'><strong> Aix-Marignane </strong>
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
-							<p class='texte p'><strong> La Joliette - Marignane </strong> </p>
-						</div>
-
-						<div class='col-12 col-sm-6 col-lg-5 x'>
-							<div class='container'>
-							<div class='row justify-content-start'>
-								<div class='col-4'>
-							<img src='Lorene.png' class='photos'>
-						</div>
-						<div class='col-4'>
-							<h2 class='texte h2'><strong>Lorene</strong></h2>
-						</div>
+					<div class='col-lg-5 hidden-md-down'>
+						<iframe src="https://snazzymaps.com/embed/73189" width="90%" height="350px" style="border:none;"></iframe>
+						<div id="map"></div>
 					</div>
-				</div>
-							<p class='texte p'><strong> Aix-Marignane </strong>
-							</p>
-						</div>
-
-					</div>
-				</div>
-				<div class='col-lg-5 hidden-md-down'>
-					<!-- <iframe src="https://snazzymaps.com/embed/73189" width="90%" height="350px" style="border:none;"></iframe> -->
-          <div id="map"></div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div id="footer" class="text-center">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-12 col-sm-6">
-					<p class="centered" class='texte'> Rejoignez-nous sur les réseaux sociaux ! </p>
-					<ul>
-						<li class="list-inline-item">
-							<a href="www.facebook.com" class="social-link">
-								<i class="fab fa-facebook logo" ></i>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a href="www.facebook.com" class="social-link">
-								<i class="fab fa-twitter logo"></i>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a href="www.youtube.com" class="social-link">
-								<i class="fab fa-youtube logo"> </i>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a href="www.facebook.com" class="social-link">
-								<i class="fab fa-instagram logo"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-12 col-sm-6" >
-					<img src="voiture3.png" alt="covoiturage" alt width="100">
+		<div>
+			<br></br>
+		</div>
+		<div id="footer" class="text-center">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-12 col-sm-6">
+						<p class="centered" class='texte'><strong>Rejoignez-nous sur les réseaux sociaux !</strong></p>
+						<ul>
+							<li class="list-inline-item">
+								<a href="www.facebook.com" class="social-link">
+									<i class="fab fa-facebook logo" ></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="www.facebook.com" class="social-link">
+									<i class="fab fa-twitter logo"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="www.youtube.com" class="social-link">
+									<i class="fab fa-youtube logo"> </i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="www.facebook.com" class="social-link">
+									<i class="fab fa-instagram logo"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-sm-6" >
+						<p><strong>Mentions légales</strong></p>
+						<p>Conditions générales</p>
+						<p>Politique de confidentialité</p>
+						<p>Utilisation des cookies</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+		<!-- ###### MODAL CLAIRE ######### -->
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Claire</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Salut ! Si t'habites près de la place Castellane et que tu bosses sur Marignane, je peux être ton chauffeur !
+						Je pars à : 8h30
+						Je passe par : Autoroute du Littoral (avec péage)
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Je contacte Claire</button>
+						<button type="button" class="btn btn-primary">Fermer</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
-  </script>
-  <script src="main.js"></script>
+		<!-- ###### MODAL MARION ######### -->
+		<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Marion</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Salut ! Si tu bosses sur Marignane et que t'es sur mon chemin, je peux être ton chauffeur !
+						Je pars à : 8h15
+						Je passe par : Autoroute du Soleil (sans péage)
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Je contacte Claire</button>
+						<button type="button" class="btn btn-primary">Fermer</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
-	</script>
-</body>
+		<!-- ###### MODAL RUBEN ######### -->
+		<div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Ruben</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Salut ! Si t'habites près de la place Castellane et que tu bosses sur Marignane, je peux être ton chauffeur !
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Je contacte Claire</button>
+						<button type="button" class="btn btn-primary">Fermer</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- ###### MODAL LORENE ######### -->
+		<div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Lorene</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Salut ! Si t'habites près de la place Castellane et que tu bosses sur Marignane, je peux être ton chauffeur !
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Je contacte Claire</button>
+						<button type="button" class="btn btn-primary">Fermer</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+		</script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+		</script>
+		<script src="main.js"></script>
+		</script>
+	</body>
 </html>

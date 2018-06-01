@@ -1,0 +1,61 @@
+#banner
+{background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("Banner-rechercher.jpg");
+background-size: 1500px 700px;
+padding: 150px;
+text-align: center;
+}
+
+#h1
+{font-style: bold;
+font-family: Arial;
+color: black;
+text-align: center;
+}
+
+.btn-perso
+{background-color : white;
+color : grey;
+width: 200px ;
+border-color: #FF7F5B
+}
+
+.btn-perso:hover
+{
+    background-color:#FF7F5B;
+    border-color: #FF7F5B;
+    color:white;
+}
+
+#button {
+    color : #FFFFFF;
+    background-color: #FF7F5B;
+    border: 0px;
+    border-radius : 10px;
+}
+
+#button:hover{
+    color :#FF7F5B;
+    background-color : #FFFFFF;
+}
+
+#proposer
+{width : 500px;}
+
+.icone
+{width : 100px;}
+
+#footer {
+    color : #FFFFFF;
+    background-color: #606060;
+    padding: 50px;
+    font-size: 15px;
+    font-family: apple-system;
+}
+
+.social-link {
+   color: #FFFFFF;
+}
+
+.social-link:hover {
+   color : #FF7F5B;
+}
